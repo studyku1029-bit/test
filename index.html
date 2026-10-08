@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Test Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">MyWebsite</div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="tag">WELCOME TO MY WEBSITE</p>
+
+                <h1>Build. Create.<br><span>Explore.</span></h1>
+
+                <p class="description">
+                    This is a simple modern test website made with
+                    HTML, CSS and JavaScript.
+                </p>
+
+                <div class="buttons">
+                    <button onclick="showMessage()">Test Button</button>
+                    <a href="#features" class="secondary-btn">Explore</a>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <div class="circle"></div>
+                <h2>Hello 👋</h2>
+                <p>Your website is working!</p>
+                <div class="status">
+                    <span></span> Online
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <p class="tag">ABOUT</p>
+            <h2>A simple website for testing</h2>
+            <p>
+                This website is completely static, so it can be hosted
+                easily using GitHub Pages.
+            </p>
+        </section>
+
+        <section id="features" class="section">
+            <p class="tag">FEATURES</p>
+            <h2>What's included?</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="icon">⚡</div>
+                    <h3>Fast</h3>
+                    <p>Lightweight HTML, CSS and JavaScript.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🎨</div>
+                    <h3>Modern</h3>
+                    <p>Clean and responsive design for all screens.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🚀</div>
+                    <h3>GitHub Ready</h3>
+                    <p>Upload the files directly to a GitHub repository.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <p class="tag">CONTACT</p>
+            <h2>Want to test something?</h2>
+            <p>Click the button below to test JavaScript.</p>
+
+            <button onclick="showMessage()">Click Me</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 MyWebsite. Made for testing.</p>
+    </footer>
+
+    <div id="message" class="message">
+        🎉 JavaScript is working!
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
