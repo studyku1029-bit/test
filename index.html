@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Test Website</title>
+
+    <title>MyWebsite</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <!-- NAVBAR -->
 
     <nav>
         <div class="logo">MyWebsite</div>
@@ -15,89 +20,282 @@
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#features">Features</a>
+            <a href="#payment">Payment</a>
             <a href="#contact">Contact</a>
         </div>
     </nav>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <p class="tag">WELCOME TO MY WEBSITE</p>
 
-                <h1>Build. Create.<br><span>Explore.</span></h1>
+    <!-- HERO -->
 
-                <p class="description">
-                    This is a simple modern test website made with
-                    HTML, CSS and JavaScript.
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="tag">WELCOME TO MY WEBSITE</p>
+
+            <h1>
+                Build.<br>
+                Create.<br>
+                <span>Explore.</span>
+            </h1>
+
+            <p class="description">
+                A modern test website built with HTML, CSS and JavaScript.
+                This website also includes a demo payment system.
+            </p>
+
+            <div class="buttons">
+
+                <a href="#payment" class="primary-btn">
+                    Try Demo Payment
+                </a>
+
+                <a href="#features" class="secondary-btn">
+                    Explore
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="circle"></div>
+
+            <h2>Hello 👋</h2>
+
+            <p>Your website is working!</p>
+
+            <div class="status">
+                <span></span>
+                Online
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ABOUT -->
+
+    <section id="about" class="section">
+
+        <p class="tag">ABOUT</p>
+
+        <h2>A simple website for testing</h2>
+
+        <p>
+            This website is designed as a starting point for a larger project.
+            It can be hosted using GitHub Pages and expanded with additional
+            features later.
+        </p>
+
+    </section>
+
+
+
+    <!-- FEATURES -->
+
+    <section id="features" class="section">
+
+        <p class="tag">FEATURES</p>
+
+        <h2>What's included?</h2>
+
+
+        <div class="cards">
+
+            <div class="card">
+
+                <div class="icon">⚡</div>
+
+                <h3>Fast</h3>
+
+                <p>
+                    Lightweight HTML, CSS and JavaScript.
                 </p>
 
-                <div class="buttons">
-                    <button onclick="showMessage()">Test Button</button>
-                    <a href="#features" class="secondary-btn">Explore</a>
-                </div>
             </div>
 
-            <div class="hero-card">
-                <div class="circle"></div>
-                <h2>Hello 👋</h2>
-                <p>Your website is working!</p>
-                <div class="status">
-                    <span></span> Online
-                </div>
-            </div>
-        </section>
 
-        <section id="about" class="section">
-            <p class="tag">ABOUT</p>
-            <h2>A simple website for testing</h2>
-            <p>
-                This website is completely static, so it can be hosted
-                easily using GitHub Pages.
+            <div class="card">
+
+                <div class="icon">🎨</div>
+
+                <h3>Modern</h3>
+
+                <p>
+                    Clean and responsive design for different devices.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">🚀</div>
+
+                <h3>GitHub Ready</h3>
+
+                <p>
+                    Upload the files directly to GitHub Pages.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- PAYMENT -->
+
+    <section id="payment" class="payment-section">
+
+        <p class="tag">DEMO PAYMENT</p>
+
+        <h2>Try the Payment System</h2>
+
+        <p class="payment-description">
+            This is only a demonstration. No real money will be transferred.
+        </p>
+
+
+        <!-- FORM -->
+
+        <form id="paymentForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <button type="submit">
+                Continue to Payment
+            </button>
+
+        </form>
+
+
+
+        <!-- PAYMENT BOX -->
+
+        <div id="paymentBox" class="payment-box">
+
+            <h3>Scan to Pay</h3>
+
+            <p class="scan-text">
+                Scan this demo QR code
             </p>
-        </section>
 
-        <section id="features" class="section">
-            <p class="tag">FEATURES</p>
-            <h2>What's included?</h2>
 
-            <div class="cards">
-                <div class="card">
-                    <div class="icon">⚡</div>
-                    <h3>Fast</h3>
-                    <p>Lightweight HTML, CSS and JavaScript.</p>
-                </div>
+            <!-- DEMO QR -->
 
-                <div class="card">
-                    <div class="icon">🎨</div>
-                    <h3>Modern</h3>
-                    <p>Clean and responsive design for all screens.</p>
-                </div>
+            <div class="qr">
 
-                <div class="card">
-                    <div class="icon">🚀</div>
-                    <h3>GitHub Ready</h3>
-                    <p>Upload the files directly to a GitHub repository.</p>
-                </div>
+                <div class="qr-corner top-left"></div>
+                <div class="qr-corner top-right"></div>
+                <div class="qr-corner bottom-left"></div>
+
+                <div class="qr-center"></div>
+
+                <div class="qr-lines"></div>
+
             </div>
-        </section>
 
-        <section id="contact" class="section contact">
-            <p class="tag">CONTACT</p>
-            <h2>Want to test something?</h2>
-            <p>Click the button below to test JavaScript.</p>
 
-            <button onclick="showMessage()">Click Me</button>
-        </section>
-    </main>
+            <h3 class="amount">
+                ₹100
+            </h3>
+
+            <p class="demo-warning">
+                DEMO PAYMENT — NO REAL MONEY
+            </p>
+
+
+            <button id="paidButton">
+                I Have Paid
+            </button>
+
+        </div>
+
+
+
+        <!-- SUCCESS -->
+
+        <div id="successBox" class="success-box">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h2>
+                Payment Successful!
+            </h2>
+
+            <p>
+                Your form has been submitted successfully.
+            </p>
+
+            <button onclick="resetPayment()">
+                Submit Another Form
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="section contact">
+
+        <p class="tag">CONTACT</p>
+
+        <h2>Want to test something?</h2>
+
+        <p>
+            This website can be expanded with more features,
+            pages and functionality.
+        </p>
+
+        <a href="#payment" class="primary-btn">
+            Test Payment
+        </a>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
 
     <footer>
-        <p>© 2026 MyWebsite. Made for testing.</p>
+
+        <p>
+            © 2026 MyWebsite. All rights reserved.
+        </p>
+
     </footer>
 
-    <div id="message" class="message">
-        🎉 JavaScript is working!
-    </div>
+
+
+    <!-- JAVASCRIPT -->
 
     <script src="script.js"></script>
+
 </body>
 </html>
